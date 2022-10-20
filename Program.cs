@@ -16,26 +16,28 @@ Console.WriteLine("The Lowest Number is " + numbers[0]);
 int radius;
 Console.WriteLine("Welcome to my program");
 
-double areaCalc()
+double areaCalc(int radius)
 {
-    Console.WriteLine("Enter a radius");
-    radius = Convert.ToInt32(Console.ReadLine());
     double answer = Math.PI * (radius*radius);
     return answer;
 }
 
 int circum;
 
-double cirCalc()
+double cirCalc(int radius)
 {
-    Console.WriteLine("Enter a radius");
-    circum = Convert.ToInt32(Console.ReadLine());
     double answer = 2* Math.PI * radius;
     return answer;
 }
 Console.ReadKey();
-
-Console.WriteLine("area is " + areaCalc());
+Console.WriteLine("Enter a radius");
+radius = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("area is " + areaCalc(radius));
 //basically just prints answer but makes it more user friendly
-Console.WriteLine("The Circumphrence is " + cirCalc());
+
+
+
+Console.WriteLine("Enter a radius");
+radius = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("The Circumphrence is " + cirCalc(radius));
 Console.ReadKey();
